@@ -10,18 +10,18 @@ python docker containers.
 Defining configuration
 ----------------------
 
-envconfig provides simple data types to define configuration with::
+econfig provides simple data types to define configuration with::
 
-    import envconfig
-    envconfig.register(
+    import econfig
+    econfig.register(
       name='MY_CONFIGURATION_NUMBER',
-      type=envconfig.types.int,
+      type=econfig.types.int,
       destination='foo.bar')
-    envconfig.register(
+    econfig.register(
         name='MY_CONFIGURATION_NUMBER',
-        type=envconfig.types.json,
+        type=econfig.types.json,
         destination='foo.json')
-    errors, settings = envconfig.parse()
+    errors, settings = econfig.parse()
     settings == {
       "foo": {
         "bar": 5
