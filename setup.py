@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='econfig',
-    version='1.0.1',
+    version='1.0.2.dev0',
     description='Env variable configuration management',
     long_description=(open('README.rst').read() + '\n' +
                       open('CHANGES.rst').read()),
