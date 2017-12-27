@@ -22,6 +22,14 @@ envconfig provides simple data types to define configuration with::
         type=envconfig.types.json,
         destination='foo.json')
     errors, settings = envconfig.parse()
+    settings == {
+      "foo": {
+        "bar": 5
+      },
+      "json": {
+        "some": "value"
+      }
+    }
 
 
 Types
